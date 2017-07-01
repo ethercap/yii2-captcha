@@ -1,0 +1,26 @@
+{
+    "name": "ethercap/yii2-captcha",
+    "description": "Another yii2 captcha",
+    "type": "library",
+    "require": {
+        "gee-team/gt3-php-sdk": "dev-master"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ian-huu",
+            "email": "ianhuu.x@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ethercap\\captcha\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/GeeTeam/gt3-php-sdk"
+        }
+    ]
+}
