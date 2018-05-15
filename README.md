@@ -23,6 +23,7 @@ yii2框架的Js验证码，所有的使用方式跟系统自带的yii\captcha\Ca
 使用
 --------------
 如下为极验js验证码的示例，我们将以登录为例来讲解如何使用该插件：
+
 ![image](./docs/img/geetest.gif)
 
 1. 在配置文件中（如common/config/main.php）加入如下的代码：
