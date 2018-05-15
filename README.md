@@ -1,4 +1,4 @@
-# yii2-watermark
+# yii2-captcha
 
 
 yii2框架的Js验证码，所有的使用方式跟系统自带的yii\captcha\Captcha一致。
@@ -65,7 +65,7 @@ class LoginForm extends Model
 
     public function sendSms()
     {
-        //具体发送验证码代码...    
+        //具体发送验证码代码...
     }
 }
 ```
@@ -79,7 +79,7 @@ class LoginForm extends Model
         'bindTo' => 'sendsms',
         'name' => 'LoginForm[captcha]', // input的name
         'gtOptions' => [                //gt的显示option
-             'width' => '50%', 
+             'width' => '50%',
         ],
     ]);?>
 ```
@@ -87,12 +87,12 @@ class LoginForm extends Model
 
 4.书写相应的controller,该内容跟本包无关，但是需要调用相应LoginForm的validate()方法。
 
-经过如下的配置后，你会发现，当你点击按钮时，会直接掉起js校验，后端和前端的校验均已经OK！
+经过如上的配置后，你会发现，当你点击按钮时，会直接掉起js校验，后端和前端的校验均已经OK！
 
 
 配置
 --------------
-本代码仓库对极验的前端控件进行了完美的封装，如下为配置的详细说明：
+本代码仓库对极验的前端控件进行了完美的封装，详情请参考[极验官方文档][1]及[本封装代码说明][2]。
 
 
 
@@ -101,3 +101,7 @@ class LoginForm extends Model
 --------------
 
 我们是一群热爱技术，追求卓越的极客，我们乐于做一些对整个社会都有作用的事情，我们希望通过我们的努力来推动整个社会的创新，如果你也一样，欢迎加入我们（service@ethercap.com）！你也可以通过https://tech.ethercap.com 来了解更多！
+
+
+  [1]: https://docs.geetest.com/install/deploy/client/web
+  [2]: https://github.com/ethercap/yii2-captcha/blob/master/src/geetest/Captcha.php
